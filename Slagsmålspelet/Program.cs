@@ -48,4 +48,27 @@
         }
     }
     
-    
+     // Skapa en Fighter-klass för att representera en slagskämpe
+    class Fighter
+    {
+        public string Name { get; set; }
+        public int HP { get; set; }
+
+        public Fighter(string name, int hp)
+        {
+            Name = name;
+            HP = hp;
+        }
+
+        // Metod för att hantera när en slagskämpe tar skada
+        public void TakeDamage(int damage)
+        {
+            HP -= damage;
+            if (HP < 0)
+            {
+                HP = 0; // HP kan inte gå under 0
+            }
+        }
+    }
+}
+Console.ReadLine();
