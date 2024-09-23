@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SlagsmalsSimulator
+namespace Slagsmålspelet
 {
     class Program
     {
@@ -48,7 +48,10 @@ namespace SlagsmalsSimulator
             {
                 Console.WriteLine($"{fighterA.Name} vann striden!");
             }
+            Console.ReadLine();
         }
+
+
     }
 
     // Skapa en Fighter-klass för att representera en slagskämpe
@@ -74,5 +77,3 @@ namespace SlagsmalsSimulator
         }
     }
 }
-
-Console.ReadLine();
