@@ -1,7 +1,10 @@
-﻿{
-    
+﻿using System;
+
+namespace SlagsmalsSimulator
+{
+    class Program
     {
-        
+        static void Main(string[] args)
         {
             // Skapa två slagskämpar med namn och hp
             Fighter fighterA = new Fighter("Slagskämpe A", 100);
@@ -47,8 +50,8 @@
             }
         }
     }
-    
-     // Skapa en Fighter-klass för att representera en slagskämpe
+
+    // Skapa en Fighter-klass för att representera en slagskämpe
     class Fighter
     {
         public string Name { get; set; }
@@ -71,4 +74,5 @@
         }
     }
 }
+
 Console.ReadLine();
